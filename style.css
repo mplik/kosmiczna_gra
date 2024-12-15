@@ -28,3 +28,34 @@ body {
     left: 10px;
     color: white;
 }
+=======
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#main-menu {
+    text-align: center;
+}
+
+#game-container {
+    position: relative;
+}
+
+#gameCanvas {
+    background-color: black;
+    border: 2px solid white;
+}
+
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
