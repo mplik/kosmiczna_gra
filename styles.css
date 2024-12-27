@@ -1,0 +1,65 @@
+/* Stylizacje ogólne */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#gameCanvas {
+    display: block;
+    margin: 0 auto;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('path/to/your/background-image.jpg'); /* Zastąp 'path/to/your/background-image.jpg' ścieżką do obrazu tła */
+    background-size: cover;
+    background-position: center;
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+#touch-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#touch-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    #gameCanvas {
+        width: 100%;
+        height: auto;
+    }
+
+    #hud {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #touch-controls {
+        flex-direction: row;
+    }
+
+    #touch-controls button {
+        width: auto;
+        padding: 15px;
+    }
+}
